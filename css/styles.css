@@ -10,9 +10,36 @@ body {
     font-family: montserrat;
 }
 
-.skip {
+
+/* SKIP STYLING  */
+/* .skip {
     font-size: 75px;
+} */
+
+
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
 }
+
+.skip a {
+    position: absolute;
+    top: -40px;
+}
+
+/* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+}
+
+
+/* END SKIP STYLING */
+
 /* NAV BAR STYLING */
 nav {
     background: #000814;
@@ -127,9 +154,9 @@ a:hover {
 
 
 /* INDEX STYLING */
-    .indexContainer {
-        padding-top: 800px;
-    }
+.indexContainer {
+    padding-top: 800px;
+}
 
 /* END INDEX STYLING  */
 
@@ -163,6 +190,7 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: lightblue;
 }
+
 /* END CONTACT FORM STYLING */
 /* 
 div {
@@ -179,11 +207,13 @@ div {
 footer {
     text-align: center;
 }
+
 .footerMain {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
 }
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -216,21 +246,22 @@ footer {
 /*END FOOTER STYLING */
 
 /* Interests Styling */
-    .interestsContainer {
-        padding-top: 150px;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        grid-template-rows: auto auto auto auto;
-        grid-row-gap: 50px;
-        align-items: center;
-        justify-content: center;
-        grid-column-gap: 50px;
-    }
-    .interestsContainer img{
+.interestsContainer {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    grid-column-gap: 50px;
+}
 
-        max-height: 250px;
-        max-width: 250px;
-    }
+.interestsContainer img {
+
+    max-height: 250px;
+    max-width: 250px;
+}
 
 /* end intersts styling */
 
@@ -241,13 +272,14 @@ footer {
     padding-top: 150px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows:  auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-row-gap: 50px;
     align-items: center;
     justify-content: center;
     grid-column-gap: 50px;
 }
-.projectsContainer img{
+
+.projectsContainer img {
     max-height: 450px;
     max-width: 450px;
 }
