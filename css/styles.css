@@ -74,10 +74,11 @@ nav ul li a {
     border-bottom: transparent solid 1px;
 }
 
-a.active,
-a:hover {
+nav a.active,
+nav a:hover {
     background: #910823;
     transition: .5s;
+    color:white;
     border-bottom: red solid 1px;
 }
 
@@ -193,14 +194,17 @@ a:hover {
 
 }
 
-.contactContainer h1,
-p {
+.contactContainer h1,p
+{
     font-size: 40px;
     text-align: center;
     padding-bottom: 20px;
 
 }
 
+.contactContainer label {
+    font-size: 20px;
+}
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -413,7 +417,7 @@ footer h1 {
 
 
 /* INDEX STYLING  */
-.aboutMe {
+/* .aboutMe {
     display:flex;
     flex-direction: row;
     justify-content:baseline;
@@ -423,7 +427,7 @@ footer h1 {
 .aboutMeText {
     position:relative;
     bottom: 425px;
-}
+} */
 
 
 /* INDEX STYLING  */
