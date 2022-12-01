@@ -426,7 +426,29 @@ footer h1 {
 
 }
 
+/* INTERESTS STYLING */
+.interestsContainer {
+    text-align:center;
+    padding-top: 150px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
 
+.interestsContainer img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.favSets h1{
+    font-size: 55px;
+    padding-bottom: 25px;
+}
+
+/* END INTERESTS STYLING */
 
 
 /* END PROJECTS STYLING */
@@ -452,7 +474,29 @@ footer h1 {
 
 /* INDEX STYLING  */
 
+/* INTERESTS STYLING */
+.interestsContainer {
+    text-align:center;
+    padding-top: 150px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
 
+.interestsContainer img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.favSets h1{
+    font-size: 55px;
+    padding-bottom: 25px;
+}
+
+/* END INTERESTS STYLING */
 /* PROJECTS STYLING  */
 .projects {
     grid-template-columns: auto auto auto;
