@@ -14,7 +14,8 @@ body {
 
 /* SKIP STYLING */
 .skip a {
-    background: white;
+    background: #000814;
+    color:white;
     left: 0;
     padding: 6px;
     -webkit-transition: top 1s ease-out;
@@ -30,6 +31,10 @@ body {
 .skip a:focus {
     position: absolute;
     top: 20px;
+}
+
+.skip a:hover {
+    background: #910823;
 }
 
 /* END SKIP STYLING */
@@ -50,6 +55,7 @@ nav {
     font-weight: bold;
     text-decoration: none;
 }
+
 .logo a:visited {
     color: #D9D9D9;
 }
@@ -330,18 +336,24 @@ footer h1 {
 
 /* Interests Styling */
 .interestsContainer {
+    text-align:center;
     padding-top: 150px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-row-gap: 50px;
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
     align-items: center;
     justify-content: center;
 }
 
 .interestsContainer img {
+    width: 80%;
+    height: auto;
+    padding-bottom: 25px;
+}
 
-    max-height: 250px;
-    max-width: 250px;
+.favSets h1{
+    font-size: 55px;
+    padding-bottom: 25px;
 }
 
 /* end intersts styling */
@@ -356,19 +368,27 @@ footer h1 {
 }
 
 .projects {
-    padding-top: 150px;
+    padding-top: 100px;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     align-items: center;
-    justify-content: center;
     justify-items: center;
     row-gap: 50px;
 }
 
-.project img {
+.projectItems {
+    justify-items:baseline;
+    text-align:center;
     width: 70%;
-    height: auto;
+}
 
+.projectItems p {
+    font-size: 25px;
+}
+
+.projectItems img {
+    width: 100%;
+    height: 250px;
 }
 
 
@@ -431,8 +451,13 @@ footer h1 {
 
 
 /* INDEX STYLING  */
-/* PROJECTS STYLING  */
 
+
+/* PROJECTS STYLING  */
+.projects {
+    grid-template-columns: auto auto auto;
+    row-gap: 50px;
+}
 
 
 
