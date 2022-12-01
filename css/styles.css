@@ -317,6 +317,7 @@ footer h1 {
 }
 
 .navLinks a {
+    text-align:center;
     color: #FCEAE8;
     font-size: 17px;
     padding: 7px 13px;
