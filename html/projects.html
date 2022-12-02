@@ -41,12 +41,12 @@
         <div class="skip">
             <a href="#projectsMain">Skip to Main Content</a>
         </div>
-        <nav>
+        <nav class="navBar">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="fas fa-bars">&#8205</i>
             </label>
-            <a class="logo" href="../index.html">Kouki Hosoyachi</a>
+            <a class="logo" id="navLogo"href="../index.html">Kouki Hosoyachi</a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a class="active" href="projects.html">Projects</a></li>
@@ -62,46 +62,94 @@
             <div class="projectItems">
                 <p>Asteroid Game</p>
                 <img src="../images/asteroids.PNG" alt="Asteroids Game">
-                <div class="inDepthInformation">
-                    <div class="alert alert-info" role="alert"> First experience with JS. Mostly used JQuery to alter
-                        screens upon user clicks.</div>
-                    <!-- First experience with JS. Mostly used JQuery to alter screens upon user clicks. -->
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description1">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame1">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description1" class="tab-pane fade in active">
+                            <p>Game project done in EECS 493 that involved a user controlling an asteroid trying to avoid asteroids from hitting them</p>
+                            <p>Languages Used: HTML, C++, JS(Jquery)</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame1" class="tab-pane fade">
+                            <p>Completed Oct 9th 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                
                 </div>
             </div>
             <div class="projectItems">
                 <p>Tyler Technologies Internship</p>
                 <img src="../images/tylertech.jpg" alt="Tyler Technologies">
-                <div class="inDepthInformation">
-                    <div class="alert alert-info" role="alert"> First experience with JS. Mostly used JQuery to alter
-                        screens upon user clicks.</div>
-                    <!-- First experience with JS. Mostly used JQuery to alter screens upon user clicks. -->
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description2">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame2">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description2" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame2" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                    
                 </div>
             </div>
             <div class="projectItems">
                 <p>Artist Search</p>
                 <img src="../images/itunes.png" alt="Itunes">
-                <div class="inDepthInformation">
-                    <div class="alert alert-info" role="alert"> First experience with JS. Mostly used JQuery to alter
-                        screens upon user clicks.</div>
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description3">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame3">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description3" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame3" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- First experience with JS. Mostly used JQuery to alter screens upon user clicks. -->
+                <div class="desktopView">
+                    
                 </div>
             </div>
             <div class="projectItems">
                 <p>Insta485</p>
                 <img src="../images/insta485.PNG" alt="insta485 Project">
-                <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a data-toggle="tab" role="tab"
-                            href="#description">Description</a></li>
-                    <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame">Time Frame</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" id="description" class="tab-pane fade in active">
-                        <p>huh</p>
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description4">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame4">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description4" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame4" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
                     </div>
-                    <div role="tabpanel" id="timeFrame" class="tab-pane fade">
-                        <p>what</p>
-                    </div>
+                </div>
+
+                <div class="desktopView">
+
                 </div>
                 <!-- <div class="inDepthInformation">
                     First experience with JS. Mostly used JQuery to alter screens upon user clicks.
@@ -110,36 +158,116 @@
             <div class="projectItems">
                 <p>Bank of America Internship</p>
                 <img src="../images/bofa.jpg" alt="Bank of America">
-                <div class="inDepthInformation">
-                    First experience with JS. Mostly used JQuery to alter screens upon user clicks.
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description5">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame5">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description5" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame5" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                    
                 </div>
             </div>
             <div class="projectItems">
                 <p>Ann Arbor Suzuki Institute</p>
                 <img src="../images/annarbor.PNG" alt="Ann Arbor Suzuki Institute">
-                <div class="inDepthInformation">
-                    First experience with JS. Mostly used JQuery to alter screens upon user clicks.
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description6">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame6">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description6" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame6" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                    
                 </div>
             </div>
             <div class="projectItems">
                 <p>Office Hours Queue</p>
                 <img src="../images/officehours.PNG" alt="Office Hours Queue">
-                <div class="inDepthInformation">
-                    First experience with JS. Mostly used JQuery to alter screens upon user clicks.
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description7">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame7">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description7" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame7" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                    
                 </div>
             </div>
             <div class="projectItems">
                 <p>Map Reduce</p>
                 <img src="../images/mapreduce.png" alt="Map Reduce Project">
-                <div class="inDepthInformation">
-                    First experience with JS. Mostly used JQuery to alter screens upon user clicks.
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description8">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame8">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description8" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame8" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                    
                 </div>
             </div>
             <div class="projectItems">
                 <p>Ask485</p>
                 <img src="../images/ask485.png" alt="Google Search Engine Replica">
-                <div class="inDepthInformation">
-                    First experience with JS. Mostly used JQuery to alter screens upon user clicks.
+                <div class="tabletTabView">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a data-toggle="tab" role="tab"
+                                href="#description9">Description</a></li>
+                        <li role="presentation"><a data-toggle="tab" role="tab" href="#timeFrame9">Time Frame</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" id="description9" class="tab-pane fade in active">
+                            <p>huh</p>
+                        </div>
+                        <div role="tabpanel" id="timeFrame9" class="tab-pane fade">
+                            <p>what</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="desktopView">
+                    
                 </div>
             </div>
         </div>

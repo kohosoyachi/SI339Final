@@ -98,17 +98,18 @@ nav a:hover {
     display: none;
 }
 
+#navLogo {
+    text-decoration:none;
+}
+
 #check {
     display: none;
 }
 
 @media (max-width: 952px) {
-    /* label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    } */
 
-    nav ul li a {
+
+    .navBar ul li a {
         font-size: 16px;
     }
 }
@@ -118,7 +119,7 @@ nav a:hover {
         display: block;
     }
 
-    ul {
+    .navBar ul {
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -128,20 +129,21 @@ nav a:hover {
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index:1;
     }
 
-    nav ul li {
+    .navBar ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    .navBar ul li a {
         font-size: 20px;
     }
 
-    nav a:hover,
-    nav a.active {
+    .navBar a:hover,
+    .navBar a.active {
         background: none;
         color: #0082e6;
     }
@@ -251,6 +253,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: rgb(87, 108, 226);
+    transition-delay: 0.05s;
+
 }
 
 /* END CONTACT FORM STYLING */
@@ -337,7 +341,8 @@ footer h1 {
 /* Interests Styling */
 .interestsContainer {
     text-align:center;
-    padding-top: 150px;
+    padding-top: 100px;
+    width: 100%;
     display: flex;
     flex-direction:column;
     flex-wrap:wrap;
@@ -346,24 +351,49 @@ footer h1 {
 }
 
 .interestsContainer img {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
     padding-bottom: 25px;
 }
 
-.favSets h1{
+.dropdown {
+    display:none;
+}
+
+.interestsContainer h1 {
     font-size: 55px;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+}
+.favSets1, .favSets2, .favSets3, h2{
+    font-size: 35px;
+    padding-bottom: 45px;
 }
 
+.interestsContainer p {
+    font-size: 25px;
+}
+
+.imageCaption {
+    display:none;
+}
+
+.desktopView {
+    display:none;
+}
 /* end intersts styling */
 
 
 /* PROJECTS STYLING */
 
+.projectsContainer {
+    background:#000814e8;
+    padding-bottom: 200px;
+}
 .projectsContainer h1{
     padding-top: 55px;
     text-align:center;
+    color: #ed254e;
     font-size: 55px;
 }
 
@@ -383,13 +413,18 @@ footer h1 {
 }
 
 .projectItems p {
+    color:#ed254e;
     font-size: 25px;
 }
 
 .projectItems img {
     width: 100%;
-    height:auto;
+    height:300px;
     object-fit:contain;
+}
+
+.tabletTabView {
+    display:none;
 }
 
 
@@ -421,42 +456,82 @@ footer h1 {
 
 @media screen and (min-width: 700px) {
 
+
+
 /* PROJECTS STYLING */
 .projects {
     grid-template-columns: auto auto; 
-
 }
+
+.tabletTabView {
+    display:block;
+    padding-bottom: 200px;
+}
+
+.tabletTabView ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabletTabView ul li a {
+    color: #ed254e;
+}
+
+/* END PROJECTS STYLING  */
 
 /* INTERESTS STYLING */
-.interestsContainer {
-    text-align:center;
-    padding-top: 150px;
-    display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content: center;
-}
 
 .interestsContainer img {
-    width: 80%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    width: 40%;
     height: auto;
     padding-bottom: 25px;
 }
 
-.favSets h1{
-    font-size: 55px;
-    padding-bottom: 25px;
+.dropdown {
+    display:block;
+    width:100%;
 }
 
+.dropdown-toggle {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.image1, .image2, .image3{
+    display:flex;
+    justify-content:baseline;
+    justify-content:space-around;
+}
+
+.imageCaption {
+    display:block;
+    display:flex;
+    justify-content:right;
+    flex-direction:column;
+}
+
+.tempTitle {
+    display:none;
+}
+.favSets1, .favSets2, .favSets3 {
+    padding-bottom: 75px;
+}
+
+.tabletTabView p {
+    padding-top:10px;
+    font-size: 20px;
+}
 /* END INTERESTS STYLING */
 
-
-/* END PROJECTS STYLING */
 }
 
-
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1150px) {
 
 
 /* INDEX STYLING  */
@@ -476,26 +551,33 @@ footer h1 {
 /* INDEX STYLING  */
 
 /* INTERESTS STYLING */
+
 .interestsContainer {
-    text-align:center;
-    padding-top: 150px;
-    display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    width:100%;
+}
+.image1, .image2, .image3 {
+    justify-content:space-between;
 }
 
-.interestsContainer img {
-    width: 80%;
-    height: auto;
-    padding-bottom: 25px;
+.image1 img, .image2 img, .image3 img {
+    padding-bottom: 100px;
+    padding-left: 25px;
 }
 
 .favSets h1{
     font-size: 55px;
     padding-bottom: 25px;
+} 
+
+.imageCaption {
+    display:none;
 }
+
+.desktopView {
+    display: block;
+}
+
 
 /* END INTERESTS STYLING */
 /* PROJECTS STYLING  */
