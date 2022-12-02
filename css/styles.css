@@ -254,8 +254,8 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: rgb(87, 108, 226);
     transition-delay: 0.05s;
-
 }
+
 
 /* END CONTACT FORM STYLING */
 
@@ -520,7 +520,7 @@ footer h1 {
     display:none;
 }
 .favSets1, .favSets2, .favSets3 {
-    padding-bottom: 75px;
+    padding-bottom: 50  px;
 }
 
 .tabletTabView p {
@@ -553,15 +553,17 @@ footer h1 {
 /* INTERESTS STYLING */
 
 .interestsContainer {
-    flex-direction: row;
     width:100%;
 }
 .image1, .image2, .image3 {
+    flex-direction: row;
     justify-content:space-between;
 }
 
 .image1 img, .image2 img, .image3 img {
     padding-bottom: 100px;
+    width: 50%;
+    height: auto;
     padding-left: 25px;
 }
 
@@ -578,7 +580,9 @@ footer h1 {
     display: block;
 }
 
-
+/* .tempTitle {
+    display:block;
+} */
 /* END INTERESTS STYLING */
 /* PROJECTS STYLING  */
 .projects {
@@ -606,6 +610,7 @@ footer h1 {
         display: flex;
         flex-direction: row;
     }
+  
 
     input[type=text] {
         width: 100%;
