@@ -7,7 +7,9 @@
 }
 
 body {
-    background: #e8d6cb;
+    background: #000814e8;
+    color: #ed254e;
+
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -387,7 +389,7 @@ footer h1 {
 /* PROJECTS STYLING */
 
 .projectsContainer {
-    background:#000814e8;
+    /* background:#000814e8; */
     padding-bottom: 200px;
 }
 .projectsContainer h1{
@@ -555,8 +557,16 @@ footer h1 {
 .interestsContainer {
     width:100%;
 }
+
+#interestsTag {
+    font-size: 55px;
+    font-weight: bold;
+    color:#ed254e;
+}
+
 .image1, .image2, .image3 {
     flex-direction: row;
+    width:100%;
     justify-content:space-between;
 }
 
@@ -567,17 +577,32 @@ footer h1 {
     padding-left: 25px;
 }
 
-.favSets h1{
+.desktopView p:first-child {
+    font-size: 40px;
+}
+
+.favSets1 h2:first-child {
+    font-size: 45px;
+}
+/* .favSets h1{
     font-size: 55px;
     padding-bottom: 25px;
-} 
+}  */
 
+.favSets1, .favSets2, .favSets3, h2 {
+    font-size: 40px;
+}
 .imageCaption {
     display:none;
 }
 
 .desktopView {
+    width:50%;
     display: block;
+}
+
+.desktopView ul li a {
+    font-size: 25px;
 }
 
 /* .tempTitle {
