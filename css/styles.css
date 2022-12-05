@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -9,8 +9,7 @@
 body {
     background: #000814e8;
     color: #ed254e;
-
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -657,16 +656,39 @@ footer h1 {
     display:none;
 }
 
+.projectItems {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 .desktopProjectsView {
     display:block;
     text-align:left;
     width: 100%;
 }
+
 .desktopProjectsView p {
     font-size: 25px;
 }
-.projectItems img {
-    width:100%;
+
+.desktopProjectsView p:first-child {
+    color:#FFD60A;
+    font-size: 30px;
+}
+
+.desktopProjectsView p:nth-child(2){
+    color:#FFD60A;
+}
+
+.desktopProjectsView p:nth-child(5){
+    color:#FFD60A;
+}
+.projects img {
+    width: 100%;
+}
+
+.projectTitle {
+    display:none;
 }
 
 /* END PROJECTS STYLING */
