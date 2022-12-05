@@ -51,7 +51,7 @@ nav {
 .logo {
     position:relative;
     left: 75px;
-    color: #D9D9D9;
+    color: #FCEAE8;
     font-size: 35px;
     line-height: 80px;
     font-weight: bold;
@@ -84,10 +84,10 @@ nav ul li a {
 
 nav a.active,
 nav a:hover {
-    background: #910823;
+    background: #0505FF;
     transition: .5s;
-    color:white;
-    border-bottom: red solid 1px;
+    color:#FFD60A;
+    border-bottom: #FFD60A solid 1px;
 }
 
 .checkbtn {
@@ -177,13 +177,14 @@ nav a:hover {
 }
 
 .aboutMeText h1 {
+    color:#FFD60A;
     padding-top: 25px;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .aboutMeText h2 {
     padding-top: 10px;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .aboutMeText p {
@@ -195,6 +196,7 @@ nav a:hover {
 .aboutMe img {
     border-radius: 50%;
 }
+
 /* END INDEX STYLING  */
 
 /* CONTACT FORM STYLING */
@@ -204,14 +206,19 @@ nav a:hover {
 
 }
 
-.contactContainer h1,p
+.contactContainer h1
 {
-    font-size: 40px;
+    font-size: 55px;
     text-align: center;
     padding-bottom: 20px;
 
 }
 
+.contactContainer p {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 40px;
+}
 .contactContainer label {
     font-size: 20px;
 }
@@ -244,8 +251,8 @@ input[type=textarea] {
 
 input[type=submit] {
     width: 75%;
-    background-color: blue;
-    color: white;
+    background-color: #ed254e;
+    color: #000814;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
@@ -254,8 +261,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: rgb(87, 108, 226);
-    transition-delay: 0.05s;
+    background-color: #E8D6CB;
 }
 
 
@@ -333,9 +339,10 @@ footer h1 {
 
 .navLinks a.active,
 .navLinks a:hover {
-    background: #910823;
+    background: #0505FF;
     transition: .5s;
-    border-bottom: red solid 1px;
+    color: #FFD60A;
+    border-bottom: #FFD60A solid 1px;
 }
 
 /*END FOOTER STYLING */
@@ -363,9 +370,12 @@ footer h1 {
     display:none;
 }
 
+.tempTitle p {
+    padding-bottom: 25px;
+}
 .interestsContainer h1 {
     font-size: 55px;
-    padding-bottom: 20px;
+    padding-bottom: 65px;
 }
 .favSets1, .favSets2, .favSets3, h2{
     font-size: 35px;
@@ -429,6 +439,10 @@ footer h1 {
     display:none;
 }
 
+.desktopProjectsView {
+    display:none;
+}
+
 
 
 /* END PROJECTS STYLING */
@@ -480,6 +494,10 @@ footer h1 {
     color: #ed254e;
 }
 
+.tabletTabView p {
+    padding-top:10px;
+    font-size: 20px;
+}
 /* END PROJECTS STYLING  */
 
 /* INTERESTS STYLING */
@@ -488,7 +506,7 @@ footer h1 {
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
-    width: 40%;
+    width: 50%;
     height: auto;
     padding-bottom: 25px;
 }
@@ -518,22 +536,25 @@ footer h1 {
     flex-direction:column;
 }
 
+.imageCaption p {
+    padding-bottom: 15px;
+}
+
+.imageCaption p:nth-child(2) {
+    font-size: 20px;
+}
 .tempTitle {
     display:none;
 }
 .favSets1, .favSets2, .favSets3 {
-    padding-bottom: 50  px;
+    padding-bottom: 50px;
 }
 
-.tabletTabView p {
-    padding-top:10px;
-    font-size: 20px;
-}
 /* END INTERESTS STYLING */
 
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1100px) {
 
 
 /* INDEX STYLING  */
@@ -560,7 +581,6 @@ footer h1 {
 
 #interestsTag {
     font-size: 55px;
-    font-weight: bold;
     color:#ed254e;
 }
 
@@ -592,6 +612,7 @@ footer h1 {
 .favSets1, .favSets2, .favSets3, h2 {
     font-size: 40px;
 }
+
 .imageCaption {
     display:none;
 }
@@ -605,17 +626,48 @@ footer h1 {
     font-size: 25px;
 }
 
-/* .tempTitle {
-    display:block;
-} */
+.desktopView ul {
+    padding-bottom: 10px;
+}
+.desktopView p:first-child {
+    color: #FFD60A;
+    padding-bottom: 10px;
+}
+
+#lionsLogo, #michiganLogo, #pistonsLogo {
+    height: 500px;
+    object-fit:cover;
+}
+
+.desktopView p:last-child  {
+    margin: 25px;
+    line-height: 1.6;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
 /* END INTERESTS STYLING */
 /* PROJECTS STYLING  */
 .projects {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     row-gap: 50px;
 }
 
+.tabletTabView {
+    display:none;
+}
 
+.desktopProjectsView {
+    display:block;
+    text-align:left;
+    width: 100%;
+}
+.desktopProjectsView p {
+    font-size: 25px;
+}
+.projectItems img {
+    width:100%;
+}
 
 /* END PROJECTS STYLING */
 
@@ -626,50 +678,30 @@ footer h1 {
         width: 100%;
     }
 
-    .contactContainer h1,
-    p {
-        font-size: 40px;
+    .contactContainer h1
+    {
+        font-size: 55px;
+    }
+
+    .contactContainer p {
+        font-size: 35px;
     }
 
     .contactForm {
         display: flex;
         flex-direction: row;
     }
-  
 
-    input[type=text] {
+    input[type=text], input[type=textarea] {
         width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    input[type=textarea] {
-        width: 100%;
-        height: 100px;
-        padding: 6px 20px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
+        border: 2px solid #FFD60A;
     }
 
     input[type=submit] {
         width: 100%;
-        background-color: blue;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
     }
 
-    input[type=submit]:hover {
-        background-color: lightblue;
-    }
+
 /* END CONTACT STYLING */
 }
 
