@@ -519,7 +519,8 @@ footer h1 {
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    color: #000814;
+    background-color: #FFD60A;
 }
 
 .image1, .image2, .image3{
