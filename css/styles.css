@@ -259,6 +259,9 @@ input[type=submit] {
     cursor: pointer;
 }
 
+.contactForm label {
+    padding-bottom:10px;
+}
 input[type=submit]:hover {
     background-color: #E8D6CB;
 }
