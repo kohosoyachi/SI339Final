@@ -74,19 +74,22 @@ nav ul li {
 
 nav ul li a {
     color: #FCEAE8;
-    font-size: 17px;
+    font-size: 16px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
     border-bottom: transparent solid 1px;
+    text-decoration:none;
 }
 
 nav a.active,
 nav a:hover {
-    background: #0505FF;
+    background:#910823;
+    text-decoration:none;
     transition: .5s;
-    color: #FFD60A;
-    border-bottom: #FFD60A solid 1px;
+    font-weight:bold;
+    color:#FCEAE8;
+    border-bottom: #FFD60A solid 2px;
 }
 
 .checkbtn {
@@ -109,7 +112,7 @@ nav a:hover {
 
 @media (max-width: 952px) {
     .navBar ul li a {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -144,7 +147,7 @@ nav a:hover {
     .navBar a:hover,
     .navBar a.active {
         background: none;
-        color: #0082e6;
+        color:#ed254e;
     }
 
     #check:checked~ul {
@@ -404,10 +407,11 @@ footer h1 {
 
 .navLinks a.active,
 .navLinks a:hover {
-    background: #0505FF;
+    background:#910823;
+    text-decoration:none;
     transition: .5s;
-    color: #FFD60A;
-    border-bottom: #FFD60A solid 1px;
+    color:#E8D6CB;
+    border-bottom: #FFD60A solid 2px;
 }
 
 /*END FOOTER STYLING */
