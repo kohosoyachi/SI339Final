@@ -532,6 +532,9 @@ footer h1 {
     justify-content:space-around;
 }
 
+.dropdown ul li a:hover {
+    color: blue;
+}
 .imageCaption {
     display:block;
     display:flex;
