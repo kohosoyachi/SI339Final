@@ -129,8 +129,8 @@ nav a:hover {
         opacity: 0.9;
         top: 80px;
         left: -100%;
-        text-align: center;
         transition: all .5s;
+        text-align: center;
         z-index: 1;
     }
 
@@ -258,6 +258,9 @@ nav a:hover {
     transform: rotateY(180deg);
 }
 
+.reduceOn {
+    display:none;
+}
 
 /* END FLIP CARDS */
 
@@ -341,6 +344,7 @@ input[type=submit]:hover {
 
 footer {
     padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
     background: #000814;
 }
@@ -359,12 +363,16 @@ footer h1 {
 
 .fa {
     font-size: 30px;
-    width: 75px;
-    padding: 25px 25px 25px 25px;
+    /* width: 75px; */
+    /* padding: 25px 25px 25px 25px; */
+    padding: 20px;
+    /* padding: 15px 10px; */
     text-align: center;
     text-decoration: none;
     margin: 10px;
-    border-radius: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    aspect-ratio: 1 / 1;
 
 }
 
@@ -375,44 +383,33 @@ footer h1 {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+    aspect-ratio: 1/1;
 }
 
 .fa-instagram {
     background: #cb2027;
     color: white;
+    aspect-ratio: 1/1;
+
 }
 
 .fa-facebook {
     background: blue;
     color: white;
+    padding-left: 22px;
+    padding-right: 22px;
+    aspect-ratio: 1/1;
 }
 
-.navLinks {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    text-decoration: none;
-    padding: 15px;
+.back-to-top {
+    font-size: 16px;
+    color:#ed254e;
 }
 
-.navLinks a {
-    color: #FCEAE8;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    border-bottom: transparent solid 1px;
+.back-to-top:hover , .back-to-top:focus {
+    color:#ed254e;
 }
 
-.navLinks a.active,
-.navLinks a:hover {
-    background:#910823;
-    text-decoration:none;
-    transition: .5s;
-    color:#E8D6CB;
-    border-bottom: #FFD60A solid 2px;
-}
 
 /*END FOOTER STYLING */
 
@@ -541,10 +538,34 @@ h2 {
     header {
         background-attachment: initial;
     }
-}
+
+    .reduceOn {
+        display:block;
+    }
+
+    .codingLanguage-back {
+        display:none;
+    }
+
+    .language:hover .codingLanguage-inner, .language:focus .codingLanguage-inner {
+        transform: none;
+    }
+    
+    .codingLanguage-back{
+        transform: none;
+    }
+
+    .navBar ul {
+        transition: 0s;
+    }
+
+    .codingLanguage-inner {
+        transition: transform 0s;
+    }
+}   
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {    
     /* PROJECTS STYLING */
     .projects {
         grid-template-columns: auto auto;
@@ -721,6 +742,7 @@ h2 {
     .projects {
         grid-template-columns: auto auto;
         row-gap: 50px;
+        line-height: 1.25;
     }
 
     .tabletTabView {
