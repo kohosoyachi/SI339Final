@@ -363,17 +363,12 @@ footer h1 {
 
 .fa {
     font-size: 30px;
-    /* width: 75px; */
-    /* padding: 25px 25px 25px 25px; */
     padding: 20px;
-    /* padding: 15px 10px; */
     text-align: center;
     text-decoration: none;
     margin: 10px;
     border-radius: 12px;
-    text-decoration: none;
     aspect-ratio: 1 / 1;
-
 }
 
 .fa:hover {
@@ -383,14 +378,11 @@ footer h1 {
 .fa-linkedin {
     background: #007bb5;
     color: white;
-    aspect-ratio: 1/1;
 }
 
 .fa-instagram {
     background: #cb2027;
     color: white;
-    aspect-ratio: 1/1;
-
 }
 
 .fa-facebook {
@@ -398,7 +390,6 @@ footer h1 {
     color: white;
     padding-left: 22px;
     padding-right: 22px;
-    aspect-ratio: 1/1;
 }
 
 .back-to-top {
@@ -817,8 +808,6 @@ h2 {
     input[type=submit] {
         width: 100%;
     }
-
-
     /* END CONTACT STYLING */
 }
 
